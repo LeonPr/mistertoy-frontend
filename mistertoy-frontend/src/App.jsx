@@ -3,6 +3,7 @@ import { Provider } from 'react-redux'
 import { store } from './store/store'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import {HomePage} from './pages/HomePage.jsx'
+import { ToyIndex } from './pages/ToyIndex.jsx'
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
           //todo add header
             <section className='app'>
               <Routes>
-                <Route element={<HomePage/>} path="/"/>
+                <Route path="/"  element={<HomePage/>} />
+                <Route path="/toy" element={<ToyIndex/>} />
               </Routes>
             </section>
         </Router>
