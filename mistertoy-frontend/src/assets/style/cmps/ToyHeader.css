@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background: white;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.toy-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%; 
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+nav a {
+    margin: 0 1.5em;
+    color: #5f6368;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+nav a:hover,
+nav a.active,
+nav a:active {
+    color: #1a73e8;
+}
+
+.app-header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #1a73e8;
+}
+
+.app-header .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.app-header .nav-right img {
+    margin-left: 1em;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+h3 {
+    color: #1a73e8;
+}
+
+/* Media Query for Tablets and Mobile Devices */
+@media (max-width: 768px) {
+    .app-header {
+        padding: 8px 10px;
+    }
+
+    nav a {
+        margin: 0 1em; /* Reduce margin between links */
+        font-size: 0.85em;
+    }
+
+    .app-header .logo {
+        font-size: 1.3em;
+    }
+
+    .app-header .nav-right img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Media Query for Small Mobile Devices */
+@media (max-width: 480px) {
+    .app-header {
+        padding: 5px 8px;
+    }
+
+    nav a {
+        margin: 0 0.8em;
+        font-size: 0.8em;
+    }
+
+    .app-header .logo {
+        font-size: 1.2em;
+    }
+
+    .app-header .nav-right img {
+        width: 24px;
+        height: 24px;
+    }
+}

@@ -6,6 +6,7 @@ import {HomePage} from './pages/HomePage.jsx'
 import { ToyIndex } from './pages/ToyIndex.jsx'
 import { ToyDetails } from './pages/ToyDetails.jsx'
 import { ToyEdit } from './pages/ToyEdit.jsx'
+import { ToyHeader } from './cmps/ToyHeader.jsx'
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
     <>
       <Provider store={store}>
         <Router>
-          //todo add header
+          <ToyHeader/>
             <section className='app'>
               <Routes>
                 <Route path="/"  element={<HomePage/>} />
